@@ -14,3 +14,8 @@ Thank you Vhyrro for teaching me about Neovim and helping me put this together!
 -    nvim-web-devicons [Icons]
 -    plenary-nvim [Lua library for Neovimm]
 -    telescope.nvim [Fuzzy finder for Neovim]
+
+You will need to install the LSPs you want yourself. To do that run :Mason and install the ones you want. They will be automatically started when you open suitable files.
+
+To install parsers for use with Treesitter, open plugins.lua and add the language you want to the ensure_installed array.
+Afterwards exit and jump back into Neovim.
