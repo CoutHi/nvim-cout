@@ -1,4 +1,4 @@
-This is my neovim confugration. It's quite minimal and simple to understand, could be a good place to start off of.
+This is my neovim configuration. It's quite minimal and simple to understand, could be a good place to start from.
 
 I also added some of my custom keybindings and some editor options.
 
