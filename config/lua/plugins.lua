@@ -21,6 +21,12 @@ require("lazy").setup({
 			vim.cmd.colorscheme("kanagawa-dragon")
 		end,
 	},
+    {
+        'xero/miasma.nvim',
+    },
+    {
+        'rose-pine/neovim', name = 'rose-pine',
+    },
 	{
 		-- install and configure treesitter
 		"nvim-treesitter/nvim-treesitter",
@@ -29,7 +35,7 @@ require("lazy").setup({
 			local configs = require("nvim-treesitter.configs")
 
 			configs.setup({
-				ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "go", "cpp" }, -- if you want syntax highlighting for additional languages, add them into the array
+				ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "go", "cpp", "python" }, -- if you want syntax highlighting for additional languages, add them into the array
 				highlight = { enable = true }, -- enable syntax highlighting
 			})
 		end,
@@ -81,6 +87,10 @@ require("lazy").setup({
                     expand = function(args)
                         vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
                     end,
+                },
+                mapping = {
+                    ['<CR>'] = cmp.mapping.confirm({select = true}),
+                    ['<Tab>'] = cmp.mapping.select_next_item(),
                 },
                 sources = cmp.config.sources({
                     { name = 'nvim_lsp' },
