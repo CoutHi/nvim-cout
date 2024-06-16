@@ -16,6 +16,7 @@ Thank you Vhyrro for teaching me about Neovim and helping me put this together!
     telescope.nvim [Fuzzy finder for Neovim]
 
 [Themes]:
+
     kanagawa
     rose-pine
     miasma
