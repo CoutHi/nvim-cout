@@ -4,7 +4,7 @@ I also added some of my custom keybindings and some editor options.
 
 Thank you Vhyrro for teaching me about Neovim and helping me put this together!
 
-Plugins included:
+[Plugins included]:
 -    lazy.nvim [To manage plugins]
 -    dashboard-nvim [Dashboard for neovim]
 -    mason.nvim [To download LSPs, linters etc.]
